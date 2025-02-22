@@ -13,7 +13,7 @@
    		<!--Selenium properties-->
    		<selenium.groupId>org.seleniumhq.selenium</selenium.groupId>
 		<selenium.artifactId>selenium-java</selenium.artifactId>
-		<selenium.version>4.27.0</selenium.version>
+		<selenium.version>4.29.0</selenium.version>
 		<testng.groupId>org.testng</testng.groupId>
 		<testng.artifactId>testng</testng.artifactId>
 		<testng.version>7.10.2</testng.version>
@@ -36,19 +36,19 @@
   </properties>
   
   <dependencies>
-	<dependency>
+  <!--maven dependencies-->
+		<dependency>
 		<groupId>javax.servlet</groupId>
 		<artifactId>javax.servlet-api</artifactId>
 		<version>3.1.0</version>
 		<scope>provided</scope>
-	</dependency>
+		</dependency>
 	<dependency>
 		<groupId>javax.servlet.jsp</groupId>
 		<artifactId>javax.servlet.jsp-api</artifactId>
 		<version>2.3.1</version>
 		<scope>provided</scope>
 	</dependency>
-	
 	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 	<dependency>
 		<groupId>mysql</groupId>
@@ -92,7 +92,16 @@
     	<artifactId>tomcat-embed-jasper</artifactId>
     	<version>10.1.10</version>
 	</dependency>
-
+	<dependency>
+    	<groupId>org.slf4j</groupId>
+    	<artifactId>slf4j-api</artifactId>
+    	<version>2.0.16</version>
+	</dependency>
+	<dependency>
+    	<groupId>org.slf4j</groupId>
+    	<artifactId>slf4j-simple</artifactId>
+    	<version>2.0.16</version>
+	</dependency>
  </dependencies>
 
   <build>
