@@ -40,5 +40,10 @@
 			<type>2</type>
 			<location>C:/Users/skeet/Desktop/School/Workspace/Project-webApp-timesheet-SSH/src/main</location>
 		</link>
+		<link>
+			<name>src/main/java</name>
+			<type>2</type>
+			<location>//C:/Users/skeet/Desktop/School/Workspace/Project-webApp-timesheet-SSH/src/main/java/</location>
+		</link>
 	</linkedResources>
 </projectDescription>
