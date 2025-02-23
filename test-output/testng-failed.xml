@@ -6,8 +6,8 @@
       <class name="com.dvops.maven.eclipse.PageTest">
         <methods>
           <include name="afterTest"/>
-          <include name="beforeTest"/>
           <include name="checkTitle"/>
+          <include name="beforeTest"/>
           <include name="testButtonPresence"/>
         </methods>
       </class> <!-- com.dvops.maven.eclipse.PageTest -->

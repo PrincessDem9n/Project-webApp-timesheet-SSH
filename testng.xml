@@ -3,7 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.dvops.maven.eclipse.NewTest2"/>
       <class name="com.dvops.maven.eclipse.NewTeset"/>
       <class name="com.dvops.maven.eclipse.PageTest"/>
     </classes>

@@ -27,7 +27,7 @@ public class NewTeset{
    public void checkTitle() {
 	  //Load website as a new page
 	   webDriver = new ChromeDriver();
-	   webDriver.navigate().to("http://localhost:8080/Project/userservlets/dashboard");
+	   webDriver.navigate().to("http://localhost:8090/Project/userservlets/dashboard");
 	  
 	  //Assert the title to check that we are indeed in the correct website
 	   Assert.assertEquals(webDriver.getTitle(), "Mott MacDonald Timesheet App");
@@ -37,7 +37,7 @@ public class NewTeset{
    @Test
    public void testButtonPresence() {
 	   webDriver = new ChromeDriver();
-	   webDriver.navigate().to("http://localhost:8080/Project/userservlets/dashboard");
+	   webDriver.navigate().to("http://localhost:8090/Project/userservlets/dashboard");
         // Find the button by its name
 	   WebElement button = webDriver.findElement(By.linkText("Add New Employee"));
         button.click();
