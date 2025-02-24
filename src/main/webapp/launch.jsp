@@ -11,7 +11,7 @@
 <h2>Welcome to Mott MacDonald Timesheet Platform</h2><br>
 <h2> Please login to begin</h2>
 	
-	<form action="loginservlets" method="post">
+	<form name="login" action="loginservlets" method="post">
 		Enter your employee ID: <input type="text" name="yourempID" size="20"><br>
 		Enter your password: <input type="text" name="yourPwd" size="20">
 <!-- Implement submit button w/type = submit to perform the request when clicked -->
