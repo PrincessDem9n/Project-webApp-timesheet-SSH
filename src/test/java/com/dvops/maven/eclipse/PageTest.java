@@ -1,18 +1,13 @@
 package com.dvops.maven.eclipse;
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 //import necessary Selenium WebDriver classes
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeTest;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 public class PageTest {
   //declare Selenium WebDriver
