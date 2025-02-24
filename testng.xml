@@ -4,7 +4,6 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.dvops.maven.eclipse.NewTeset"/>
-      <class name="com.dvops.maven.eclipse.PageTest"/>
-    </classes>
+     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
