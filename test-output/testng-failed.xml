@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dvops.maven.eclipse.PageTest">
+      <class name="com.dvops.maven.eclipse.TestLogin">
         <methods>
-          <include name="afterTest"/>
-          <include name="checkTitle"/>
+          <include name="testDoPostHttpServletRequestHttpServletResponse"/>
+          <include name="testDoGetHttpServletRequestHttpServletResponse"/>
           <include name="beforeTest"/>
-          <include name="testButtonPresence"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- com.dvops.maven.eclipse.PageTest -->
+      </class> <!-- com.dvops.maven.eclipse.TestLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

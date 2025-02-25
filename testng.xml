@@ -3,9 +3,12 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.dvops.maven.eclipse.NewTeset"/>
-      <class name="com.dvops.maven.eclipse.TestLoginPage"/>
-      <class name="com.dvops.maven.eclipse.TestLogin1"/>
+    	<!-- testing launch.jsp to run home page of the web app  -->
+      <class name="com.dvops.maven.eclipse.launchTest"/>
+      	<!-- testing dashboard page to display all users 
+      	and to test if the "add new employee" button will bring users to the next page
+      	it will return a result of the title of the new page if it is successful-->
+      <class name="com.dvops.maven.eclipse.userservlets"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

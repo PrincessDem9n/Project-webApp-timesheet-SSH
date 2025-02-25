@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Mott MacDonald Timesheet App</title>
+<title>Home Page</title>
 </head> 
 <body>
 
@@ -15,7 +15,7 @@
 		Enter your employee ID: <input type="text" name="yourempID" size="20"><br>
 		Enter your password: <input type="text" name="yourPwd" size="20">
 <!-- Implement submit button w/type = submit to perform the request when clicked -->
-		<input type="submit" id="submit" name="submit" value="Call Login Servlet" />
+		<input type="submit" value="Call Login Servlet" />
 	</form>
 
 </body>
