@@ -28,7 +28,7 @@ pipeline{
 				script {
 			// Prepare SonarQube environment
 			def sonarProperties = """
-				sonar.projectKey=Project-webApp-timesheet-SSH
+				sonar.projectKey=Project:Project
 				sonar.projectName=Project-webApp-timesheet-SSH
 				sonar.projectVersion=1.0
 				sonar.sources=src/main
