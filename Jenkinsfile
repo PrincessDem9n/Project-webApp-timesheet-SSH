@@ -41,8 +41,8 @@ pipeline{
 				sonar.java.binaries=target/classes
 				sonar.java.coveragePlugin=jacoco 
 				"""
-				// Create sonar-project.properties file
-				writeFile file: 'sonar-project.properties', text: sonarProperties
+				// Create sonarproperties file
+				writeFile file: 'sonar.properties', text: sonarProperties
 				// Run SonarQube scan using the properties file
 				withSonarQubeEnv('sonarqube_server') {
 					bat "mvn sonar:sonar"
