@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-    	<!-- testing launch.jsp to run home page of the web app  -->
+    	<!-- testing launch.jsp to run home page of the web app
+    	and to test that the result will prompt error msg when no credential is entered  -->
       <class name="com.dvops.maven.eclipse.launchTest"/>
       	<!-- testing dashboard page to display all users 
       	and to test if the "add new employee" button will bring users to the next page

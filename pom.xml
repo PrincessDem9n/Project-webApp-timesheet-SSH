@@ -18,11 +18,6 @@
 		<testng.artifactId>testng</testng.artifactId>
 		<testng.version>7.10.2</testng.version>
    		
-   		<!-- adding JUnit Jupitpr-->
-   		<junit-jupiter.groupId>org.junit.jupiter</junit-jupiter.groupId>
-		<junit-jupiter.artifactId>junit-jupiter</junit-jupiter.artifactId>
-		<junit-jupiter.version>5.11.4</junit-jupiter.version>
-
 		<!--  jacoco properties -->
 		<jacoco.groupId>org.jacoco</jacoco.groupId>
 		<jacoco.artifactId>jacoco-maven-plugin</jacoco.artifactId>
@@ -31,9 +26,29 @@
 		<!--  SonarQube properties -->
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-		<sonar.version>25.1.0.102122</sonar.version>
 		<sonar.language>java</sonar.language>
+		
+		<!-- adding JUnit Jupitpr-->
+   		<junit-jupiter.groupId>org.junit.jupiter</junit-jupiter.groupId>
+		<junit-jupiter.artifactId>junit-jupiter</junit-jupiter.artifactId>
+		<junit-jupiter.version>5.11.4</junit-jupiter.version>
   </properties>
+  
+  <profiles>
+  <profile>
+  <id>sonar</id>
+  <activation>
+  	<activeByDefault>true</activeByDefault>
+  </activation>
+  	<properties>
+  	<sonar.host.url>
+  	http://localhost:9000
+  	</sonar.host.url>
+  	<sonar.projectKey>Project</sonar.projectKey>
+  	<sonar.token>squ_1325adda787ba63f44f9a9ed4c42fc16f56a447b</sonar.token>
+  	</properties>
+  </profile>
+  </profiles>
   
   <dependencies>
   <!--maven dependencies-->
@@ -113,6 +128,12 @@
         	</exclusion>
     	</exclusions>
 	</dependency>
+	<!--add sonarsource to better integrate -->
+	<dependency>
+	<groupId>org.sonarsource.scanner.maven</groupId>
+	<artifactId>sonar-maven-plugin</artifactId>
+	<version>4.0.0.4121</version>
+	</dependency>
 	<!--add html dependencies to test .jsp-->
 	<dependency>
     <groupId>net.sourceforge.htmlunit</groupId>
@@ -125,6 +146,12 @@
     <artifactId>json</artifactId>
     <version>20210307</version>
 </dependency>
+	<dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>3.3.3</version>
+        <scope>test</scope>
+    </dependency>
 		</dependencies>
 
   <build>

@@ -12,10 +12,10 @@
 <h2> Please login to begin</h2>
 	
 	<form id="login" name="login" action="loginservlets" method="post">
-		Enter your employee ID: <input type="text" name="yourempID" size="20"><br>
-		Enter your password: <input type="text" name="yourPwd" size="20">
+		Enter your employee ID: <input id="yourempID" type="text" name="yourempID" size="20"><br>
+		Enter your password: <input id="yourPWd" type="text" name="yourPwd" size="20">
 <!-- Implement submit button w/type = submit to perform the request when clicked -->
-		<input type="submit" value="Call Login Servlet" />
+		<input id="Call Login Servlet" type="submit" value="Call Login Servlet"/>
 	</form>
 
 </body>

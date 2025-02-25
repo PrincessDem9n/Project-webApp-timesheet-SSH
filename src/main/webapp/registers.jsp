@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Mott MacDonald Timesheet App</title>
+<title>Employee Registration</title>
 </head>
 <body>
 <h3>Mott MacDonald Timesheet Platform</h3>
