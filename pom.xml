@@ -127,12 +127,6 @@
         	</exclusion>
     	</exclusions>
 	</dependency>
-	<!--add sonarsource to better integrate -->
-	<dependency>
-	<groupId>org.sonarsource.scanner.maven</groupId>
-	<artifactId>sonar-maven-plugin</artifactId>
-	<version>4.0.0.4121</version>
-	</dependency>
 	<!--add html dependencies to test .jsp-->
 	<dependency>
     <groupId>net.sourceforge.htmlunit</groupId>
