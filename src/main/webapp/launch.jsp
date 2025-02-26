@@ -10,7 +10,7 @@
 
 <h2>Welcome to Mott MacDonald Timesheet Platform</h2><br>
 <h2> Please login to begin</h2>
-<h3>adding to test</h3>
+<h3>adding to test2</h3>
 	
 	<form id="login" name="login" action="loginservlets" method="post">
 		Enter your employee ID: <input id="yourempID" type="text" name="yourempID" size="20"><br>
