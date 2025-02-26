@@ -44,12 +44,32 @@
   	<sonar.host.url>
   	http://localhost:9000
   	</sonar.host.url>
-  	<sonar.projectKey>Project:Project</sonar.projectKey>
+  	<sonar.projectKey>Project-webApp-timesheet-SSH</sonar.projectKey>
   	</properties>
   </profile>
   </profiles>
   
   <dependencies>
+  <!--Selenium dependencies-->
+	<dependency>
+		<groupId>${selenium.groupId}</groupId>
+		<artifactId>${selenium.artifactId}</artifactId>
+		<version>${selenium.version}</version>
+			</dependency>
+	<dependency>
+		<groupId>${testng.groupId}</groupId>
+		<artifactId>${testng.artifactId}</artifactId>
+		<version>${testng.version}</version>
+		<scope>test</scope>
+	</dependency>
+  <!-- adding JUnit dependencies-->
+	<dependency>
+		<groupId>${junit-jupiter.groupId}</groupId>
+		<artifactId>${junit-jupiter.artifactId}</artifactId>
+		<version>${junit-jupiter.version}</version>
+		<scope>test</scope>
+	</dependency>
+	
   <!--maven dependencies-->
 		<dependency>
 		<groupId>javax.servlet</groupId>
@@ -69,37 +89,16 @@
 		<artifactId>mysql-connector-java</artifactId>
 		<version>8.0.25</version>
 	</dependency>
-	
 	<!-- https://mvnrepository.com/artifact/jstl/jstl -->
 	<dependency>
 		<groupId>jstl</groupId>
 		<artifactId>jstl</artifactId>
 		<version>1.2</version>
 	</dependency>
-	<!-- <dependency> 
+	<dependency> 
 		<groupId>javax.servlet</groupId> 
 		<artifactId>jstl</artifactId> 
 		<version>1.2</version>
-	</dependency> -->
-	<!--Selenium dependencies-->
-	<dependency>
-		<groupId>${selenium.groupId}</groupId>
-		<artifactId>${selenium.artifactId}</artifactId>
-		<version>${selenium.version}</version>
-			</dependency>
-	<dependency>
-		<groupId>${testng.groupId}</groupId>
-		<artifactId>${testng.artifactId}</artifactId>
-		<version>${testng.version}</version>
-		<scope>test</scope>
-	</dependency>
-	
-	<!-- adding JUnit dependencies-->
-	<dependency>
-		<groupId>${junit-jupiter.groupId}</groupId>
-		<artifactId>${junit-jupiter.artifactId}</artifactId>
-		<version>${junit-jupiter.version}</version>
-		<scope>test</scope>
 	</dependency>
 	<dependency>
     	<groupId>org.apache.tomcat.embed</groupId>
@@ -145,8 +144,7 @@
         <version>3.3.3</version>
         <scope>test</scope>
     </dependency>
-		</dependencies>
-
+ </dependencies>
   <build>
     <plugins>
            <plugin>
@@ -200,7 +198,7 @@
         	<artifactId>maven-war-plugin</artifactId>
         	<version>3.2.3</version>
         </plugin>
-               
+                  
       <!-- Jacoco plugins-->
       <plugin>
 		<groupId>${jacoco.groupId}</groupId>
