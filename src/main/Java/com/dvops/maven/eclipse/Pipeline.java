@@ -4,7 +4,7 @@ public class Pipeline {
 //declare attributes
 	protected String empID;
 	protected String staffname = "Neil";
-	protected String grade;
+	protected String grade = "B";
 
 	//testing if the pipeline will update with the changes
 	public String getEmpID() {
