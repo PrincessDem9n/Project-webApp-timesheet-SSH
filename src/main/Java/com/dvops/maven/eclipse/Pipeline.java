@@ -3,6 +3,7 @@ package com.dvops.maven.eclipse;
 public class Pipeline {
 //declare attributes
 	protected String empID;
+	protected String staffID;
 
 	//testing if the pipeline will update with the changes
 	public String getEmpID() {
@@ -11,4 +12,6 @@ public class Pipeline {
 	public void setEmpID(String empID) {
 		this.empID = empID;
 	}
+	
+	
 }
