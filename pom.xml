@@ -45,7 +45,6 @@
   	http://localhost:9000
   	</sonar.host.url>
   	<sonar.projectKey>Project-webApp-timesheet-SSH</sonar.projectKey>
-  	<sonar.token>squ_1325adda787ba63f44f9a9ed4c42fc16f56a447b</sonar.token>
   	</properties>
   </profile>
   </profiles>
